@@ -29,6 +29,29 @@
   border: 1px solid #333333;
 }
 
+/*ここから編集画面*/
+.form-input{
+  display: flex;
+  margin:10px;
+  padding:5px;
+  border: 1px solid #333333;
+}
+.item-name{
+  padding:10px;
+  border:none;
+  width:200px;
+  margin-right:10px;
+}
+.item-text{
+  padding:10px;
+  border:none;
+  width:200px;
+}
+.form-submit{
+  float: right;
+  margin-right: 10px;
+}
+
 
 
 
