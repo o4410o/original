@@ -20,6 +20,7 @@
   width:500px;
   height: calc(100vh - 50px);
   overflow: scroll;
+  background-color: #CBFFD3;
 }
 .memo{
   display: flex;
@@ -29,11 +30,14 @@
   border: 1px solid #333333;
 }
 
-/*ここから編集画面*/
+/*ここから新規画面*/
+.form{
+  width:500px;
+  margin-bottom: 100px;
+}
 .form-input{
   display: flex;
   margin:10px;
-  padding:5px;
   border: 1px solid #333333;
 }
 .item-name{
@@ -47,6 +51,7 @@
   border:none;
   width:200px;
 }
+
 .form-submit{
   float: right;
   margin-right: 10px;

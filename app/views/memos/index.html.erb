@@ -1,6 +1,8 @@
 <div class="memos">
-  <div class="memo">
-    <div class="memo-item">りんご</div>
-    <div class="memo-text">西友</div>
-  </div>
+  <% @memos.each do |memo| %>
+    <div class="memo">
+      <div class="memo-item"><%= memo.item %></div>
+      <div class="memo-text"><%= memo.text %></div>
+    </div>
+  <% end %>
 </div>
