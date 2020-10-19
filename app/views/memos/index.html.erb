@@ -1,8 +1,10 @@
 <div class="memos">
   <% @memos.each do |memo| %>
+  <section>
     <div class="memo">
       <div class="memo-item"><%= memo.item %></div>
       <div class="memo-text"><%= memo.text %></div>
     </div>
+    </section>
   <% end %>
 </div>
