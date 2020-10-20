@@ -19,6 +19,18 @@ class MemosController < ApplicationController
     end
   end
 
+  def checked
+    memo = Memo.find(memi_params[:id])
+    if memo.checked
+      memo.update(checked: false)
+    else
+      memo.update(checked: true)
+    end
+
+    item = Memo.find(memo_params[:id])
+    render ison: {memo: item}
+  end
+
 
   private
   def memo_params
