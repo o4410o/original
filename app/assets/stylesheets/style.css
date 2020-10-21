@@ -29,7 +29,9 @@
   margin:10px;
   border: 1px solid #333333;
 }
-
+div[data-check="true"] {
+  background: #585555;
+  }
 /*ここから新規画面*/
 .form{
   width:500px;
