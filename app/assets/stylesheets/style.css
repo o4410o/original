@@ -2,6 +2,8 @@
   width:500px;
   height:50px;
   background-color: #98FB98;
+  margin: 0 auto;
+  border-radius: 10px;
 }
 .header-bar{
   display: flex;
@@ -15,19 +17,28 @@
   margin: 10px 20px;
   font-size: 20px;
 }
+.add-btn{
+  text-decoration: none;
+  color:#800000;
+}
 /*ここからメモ部分*/
 .memos{
   width:500px;
   height: calc(100vh - 50px);
   overflow: scroll;
-  background-color: #CBFFD3;
+  margin: 0 auto;
 }
 .memo{
   display: flex;
   justify-content: space-between;
   padding:10px 20px 10px 10px;
-  margin:10px;
+  margin:10px 10px 10px 10px;
   border: 1px solid #333333;
+  border-radius: 10px;
+}
+.delete-btn{
+  text-decoration: none;
+  color:#800000;
 }
 div[data-check="true"] {
   background: #585555;
@@ -35,12 +46,18 @@ div[data-check="true"] {
 /*ここから新規画面*/
 .form{
   width:500px;
-  margin-bottom: 100px;
+  height: 200px;
+  margin: 0 auto;
+}
+.edit-title{
+  font-size:20px;
+  padding-left:20px;
 }
 .form-input{
   display: flex;
   margin:10px;
   border: 1px solid #333333;
+  border-radius: 10px;
 }
 .item-name{
   padding:10px;
@@ -59,16 +76,11 @@ div[data-check="true"] {
   margin-right: 10px;
 }
 
-
-
-
-
-
-
 /*ここからfooter*/
 .footer{
   width:500px;
   font-size: 15px;
   text-align: center;
   color:#BBBBBB ;
+  margin: 0 auto;
 }
