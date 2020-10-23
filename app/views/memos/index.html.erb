@@ -1,0 +1,13 @@
+<div class="memos">
+  <% @memos.each do |memo| %>
+    <div class="memo">
+      <div class="memo-item"><%= memo.item %></div>
+      <div class="memo-text"><%= memo.text %></div>
+      
+    <%= link_to '削除', memo_path(memo.id) , method: :delete, class: "delete-btn" %>
+  
+    </div>
+    
+  <% end %>
+  
+</div>
